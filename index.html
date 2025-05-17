@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,30 +6,83 @@
   <title>HakimSec - WordPress Vulnerability Scanner</title>
   <style>
     body {
-      background-color: #0a0a23;
-      color: #ffffff;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 2rem;
+      line-height: 1.6;
     }
-    h1 {
-      color: #00ffcc;
-      font-size: 3rem;
-    }
-    p {
-      font-size: 1.2rem;
-      color: #ccc;
+    h1, h2 {
+      color: #58a6ff;
     }
     a {
-      color: #00ffcc;
-      text-decoration: underline;
+      color: #58a6ff;
+    }
+    code {
+      background: #161b22;
+      padding: 2px 4px;
+      border-radius: 4px;
+      color: #ffa657;
+    }
+    button {
+      background-color: #ffd700;
+      color: #000;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    footer {
+      margin-top: 50px;
+      border-top: 1px solid #30363d;
+      padding-top: 10px;
+      font-size: 0.9rem;
+      text-align: center;
+      color: #8b949e;
     }
   </style>
 </head>
 <body>
-  <h1>HakimSec</h1>
-  <p>The Ultimate WordPress Vulnerability Scanner by Hakim</p>
-  <p>GitHub Project: <a href="https://github.com/hakim2345/hakimsec" target="_blank">hakim2345/hakimsec</a></p>
-  <p>Tool version: <strong>v1.0</strong></p>
+  <h1>HakimSec - WordPress Vulnerability Scanner</h1>
+  <p>Built by <strong>Hakim</strong>, this scanner performs full analysis on WordPress sites including:</p>
+  <ul>
+    <li>Plugin & Theme enumeration</li>
+    <li>Login brute-force (rockyou.txt)</li>
+    <li>CVE detection & CVSS scoring</li>
+    <li>Export to PDF, HTML, Burp JSON</li>
+  </ul>
+
+  <!-- PayPal Donate Button -->
+  <form action="https://www.paypal.com/donate" method="post" target="_blank">
+    <input type="hidden" name="business" value="abdicaliff@gmail.com" />
+    <input type="hidden" name="no_recurring" value="0" />
+    <input type="hidden" name="currency_code" value="USD" />
+    <button>Support via PayPal</button>
+  </form>
+
+  <h2>How to Use HakimSec</h2>
+  <ol>
+    <li>Clone the repo:
+      <br><code>git clone https://github.com/hakim2345/hakimsec</code>
+    </li>
+    <li>Install dependencies:
+      <br><code>pip install -r requirements.txt</code>
+    </li>
+    <li>Scan a target:
+      <br><code>python3 hakimsec.py https://example.com</code>
+    </li>
+    <li>Reports:
+      <br>Saved as <code>report.html</code>, <code>report.json</code>, <code>report.pdf</code>
+    </li>
+  </ol>
+
+  <footer>
+    &copy; 2025 HakimSec - Built with pride. <br>
+    <a href="https://github.com/hakim2345/hakimsec">GitHub Project</a>
+  </footer>
 </body>
 </html>
